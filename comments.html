@@ -24,7 +24,6 @@ html {
     <script src="comments.js" type="module"></script>
     <div id="disqus_thread"></div>
     <script>
-console.log('-cm.html start-')
 const params = Object.fromEntries(new URLSearchParams(window.location.search).entries());
 
 function createURL(base, params) {
@@ -42,13 +41,13 @@ function createURL(base, params) {
 }
 
 var disqus_config = function () {
-    this.page.url = createURL('https://jsbencit.org/', {src: params.disqusId});
+    this.page.url = createURL('https://jsbenchit.org/', {src: params.disqusId});
     this.page.identifier = params.disqusId;
     this.page.title = params.title;
 };
 (function() { // DON'T EDIT BELOW THIS LINE
 var d = document, s = d.createElement('script');
-s.src = 'https://jsbencit.disqus.com/embed.js';
+s.src = 'https://jsbenchit.disqus.com/embed.js';
 s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();
